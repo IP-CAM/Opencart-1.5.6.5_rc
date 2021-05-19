@@ -53,7 +53,7 @@ class Image {
 		}
 	}
 
-	public function resize($width = 0, int $height = 0, int $default = '') {
+	public function resize(int $width = 0, int $height = 0, $default = '') {
 		if (!$this->info['width'] || !$this->info['height']) {
 			return;
 		}

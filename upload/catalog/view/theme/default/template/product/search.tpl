@@ -125,7 +125,7 @@ $('#content input[name=\'search\']').keydown(function(e) {
 	}
 });
 
-$('select[name=\'category_id\']').bind('change', function() {
+$('select[name=\'category_id\']').on('change', function() {
 	if (this.value == '0') {
 		$('input[name=\'sub_category\']').attr('disabled', 'disabled');
 		$('input[name=\'sub_category\']').removeAttr('checked');

@@ -141,7 +141,7 @@
   </div>
 </div>
 <script type="text/javascript"><!--
-$('select[name=\'return_action_id\']').bind('change', function() {
+$('select[name=\'return_action_id\']').on('change', function() {
 	$.ajax({
 		url: 'index.php?route=sale/return/action&token=<?php echo $token; ?>&return_id=<?php echo $return_id; ?>',
 		type: 'post',
@@ -173,7 +173,7 @@ $('select[name=\'return_action_id\']').bind('change', function() {
 	});	
 });
 
-$('#history .pagination a').live('click', function() {
+$('#history .pagination a').on('click', function() {
 	$('#history').load(this.href);
 	
 	return false;

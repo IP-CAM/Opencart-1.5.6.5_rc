@@ -151,7 +151,7 @@ $('input[name=\'product\']').autocomplete({
    	}
 });
 
-$('#featured-product div img').live('click', function() {
+$('#featured-product div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#featured-product div:odd').attr('class', 'odd');

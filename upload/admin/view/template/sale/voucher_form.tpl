@@ -105,7 +105,7 @@
 </div>
 <?php if ($voucher_id) { ?>
 <script type="text/javascript"><!--
-$('#history .pagination a').live('click', function() {
+$('#history .pagination a').on('click', function() {
 	$('#history').load(this.href);
 	
 	return false;

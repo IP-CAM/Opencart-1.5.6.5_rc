@@ -440,7 +440,7 @@ function addAddress() {
 }
 //--></script> 
 <script type="text/javascript"><!--
-$('#history .pagination a').live('click', function() {
+$('#history .pagination a').on('click', function() {
 	$('#history').load(this.href);
 	
 	return false;
@@ -473,7 +473,7 @@ $('#button-history').bind('click', function() {
 });
 //--></script> 
 <script type="text/javascript"><!--
-$('#transaction .pagination a').live('click', function() {
+$('#transaction .pagination a').on('click', function() {
 	$('#transaction').load(this.href);
 	
 	return false;
@@ -506,7 +506,7 @@ $('#button-transaction').bind('click', function() {
 });
 //--></script> 
 <script type="text/javascript"><!--
-$('#reward .pagination a').live('click', function() {
+$('#reward .pagination a').on('click', function() {
 	$('#reward').load(this.href);
 	
 	return false;

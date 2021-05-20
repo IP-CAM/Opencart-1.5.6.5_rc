@@ -259,7 +259,7 @@ $(document).ready(function() {
 		}
 	});	
 
-	$('#column-right a').live('click', function() {
+	$('#column-right a').on('click', function() {
 		if ($(this).attr('class') == 'selected') {
 			$(this).removeAttr('class');
 		} else {

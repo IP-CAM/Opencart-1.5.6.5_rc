@@ -82,7 +82,7 @@
 </div>
 
 <script type="text/javascript"><!--
-$('.button-load-listings').live('click', function () {
+$('.button-load-listings').on('click', function () {
 
   var paragraph = $(this).parent();
   var oldText = paragraph.html();

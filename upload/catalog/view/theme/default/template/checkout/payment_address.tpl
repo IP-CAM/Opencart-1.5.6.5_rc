@@ -103,7 +103,7 @@ $('#payment-address input[name=\'payment_address\']').live('change', function() 
 });
 //--></script> 
 <script type="text/javascript"><!--
-$('#payment-address select[name=\'country_id\']').bind('change', function() {
+$('#payment-address select[name=\'country_id\']').on('change', function() {
 	if (this.value == '') return;
 	$.ajax({
 		url: 'index.php?route=checkout/checkout/country&country_id=' + this.value,

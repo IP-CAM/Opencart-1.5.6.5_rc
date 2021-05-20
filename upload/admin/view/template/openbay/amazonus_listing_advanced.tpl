@@ -621,7 +621,7 @@ var nodeBox = '';
 var nodeString = '';
 var nodeStringSimple = '';
 
-$('.browseNode').live('click', function(){
+$('.browseNode').on('click', function(){
     var html = '';
 
     nodeBox = $(this).attr("field_name");

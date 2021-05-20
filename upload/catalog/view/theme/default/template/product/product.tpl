@@ -450,7 +450,7 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 <?php } ?>
 <?php } ?>
 <script type="text/javascript"><!--
-$('#review .pagination a').live('click', function() {
+$('#review .pagination a').on('click', function() {
 	$('#review').fadeOut('slow');
 		
 	$('#review').load(this.href);

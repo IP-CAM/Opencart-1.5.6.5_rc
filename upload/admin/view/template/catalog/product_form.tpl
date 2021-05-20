@@ -847,7 +847,7 @@ $('input[name=\'category\']').autocomplete({
    }
 });
 
-$('#product-category div img').live('click', function() {
+$('#product-category div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#product-category div:odd').attr('class', 'odd');
@@ -886,7 +886,7 @@ $('input[name=\'filter\']').autocomplete({
    }
 });
 
-$('#product-filter div img').live('click', function() {
+$('#product-filter div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#product-filter div:odd').attr('class', 'odd');
@@ -925,7 +925,7 @@ $('input[name=\'download\']').autocomplete({
    }
 });
 
-$('#product-download div img').live('click', function() {
+$('#product-download div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#product-download div:odd').attr('class', 'odd');
@@ -964,7 +964,7 @@ $('input[name=\'related\']').autocomplete({
    }
 });
 
-$('#product-related div img').live('click', function() {
+$('#product-related div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#product-related div:odd').attr('class', 'odd');

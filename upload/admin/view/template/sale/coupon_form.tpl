@@ -159,7 +159,7 @@
   </div>
 </div>
 <script type="text/javascript"><!--
-$('input[name=\'category[]\']').bind('change', function() {
+$('input[name=\'category[]\']').on('change', function() {
 	var filter_category_id = this;
 	
 	$.ajax({
@@ -215,7 +215,7 @@ $('input[name=\'product\']').autocomplete({
    	}
 });
 
-$('#coupon-product div img').live('click', function() {
+$('#coupon-product div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#coupon-product div:odd').attr('class', 'odd');
@@ -255,7 +255,7 @@ $('input[name=\'category\']').autocomplete({
    }
 });
 
-$('#coupon-category div img').live('click', function() {
+$('#coupon-category div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#coupon-category div:odd').attr('class', 'odd');
@@ -268,7 +268,7 @@ $('#date-end').datepicker({dateFormat: 'yy-mm-dd'});
 //--></script>
 <?php if ($coupon_id) { ?>
 <script type="text/javascript"><!--
-$('#history .pagination a').live('click', function() {
+$('#history .pagination a').on('click', function() {
 	$('#history').load(this.href);
 	
 	return false;

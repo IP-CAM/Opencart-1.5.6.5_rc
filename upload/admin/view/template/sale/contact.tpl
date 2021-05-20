@@ -97,7 +97,7 @@ CKEDITOR.replace('message', {
 });
 //--></script> 
 <script type="text/javascript"><!--	
-$('select[name=\'to\']').bind('change', function() {
+$('select[name=\'to\']').on('change', function() {
 	$('#mail .to').hide();
 	
 	$('#mail #to-' + $(this).attr('value').replace('_', '-')).show();
@@ -155,7 +155,7 @@ $('input[name=\'customers\']').catcomplete({
    	}
 });
 
-$('#customer div img').live('click', function() {
+$('#customer div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#customer div:odd').attr('class', 'odd');
@@ -195,7 +195,7 @@ $('input[name=\'affiliates\']').autocomplete({
    	}
 });
 
-$('#affiliate div img').live('click', function() {
+$('#affiliate div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#affiliate div:odd').attr('class', 'odd');
@@ -233,7 +233,7 @@ $('input[name=\'products\']').autocomplete({
    	}
 });
 
-$('#product div img').live('click', function() {
+$('#product div img').on('click', function() {
 	$(this).parent().remove();
 	
 	$('#product div:odd').attr('class', 'odd');

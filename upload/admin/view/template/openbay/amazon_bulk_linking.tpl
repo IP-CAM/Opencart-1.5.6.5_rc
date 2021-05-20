@@ -91,7 +91,7 @@
 <script type="text/javascript"><!--
 $('#tabs a').tabs();
 
-$('.button-load-listings').live('click', function () {
+$('.button-load-listings').on('click', function () {
 
   var paragraph = $(this).parent();
   var oldText = paragraph.html();
@@ -145,7 +145,7 @@ $('.link-button').click(function () {
   });
 });
 
-$('#marketplace_select').bind('change', function() {
+$('#marketplace_select').on('change', function() {
   location = $('#marketplace_select').val();
 });
 //--></script>

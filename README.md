@@ -19,6 +19,6 @@ https://github.com/opencart/opencart/blob/c2c8f9c4c8fce44bb81b394e235913306fb757
 
 Official OpenCart v.1.5.6.5_rc Download Site:
 
-This official v.1.5.6.5_rc Download Version is not yet able, to handle PHP v.7.4.20:
+The official v.1.5.6.5_rc Download Version, linked below, is not yet able, to handle PHP v.7.4.20:
 
 https://github.com/opencart/opencart/tree/c2c8f9c4c8fce44bb81b394e235913306fb75707
